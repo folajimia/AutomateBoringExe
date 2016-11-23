@@ -99,12 +99,16 @@ i=1
 for i in range(len(grid)):
 	x1 =0
 	y2=len(grid)-i
+	y1=y1+1
 	print ('y1-' + str(y2-1))
 	for j in range(len(grid[1])):
 		x1=x1+1
+		x2=j
+		
 		print ('x1-' + str(x1-1))
-		"""newGrid[x2][y2-1] ="""
-		print grid[x1-1][y1]
+		##newGrid[x2][y2-1] =grid[x1-1][y1]
+		#newGrid[x2][y2] = grid[x1][y1]
+		##print grid[x1-1][y1]
 	
 	
 #print grid
