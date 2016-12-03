@@ -1,6 +1,10 @@
+import random
 theBoard={'top-L':' ', 'top-M':' ', 'top-R':' ',
 'mid-L':' ', 'mid-M':' ', 'mid-R':' ',
-'low-L':' ', 'low-M':' ', 'low-R':' ',}
+'low-L':' ', 'low-M':' ', 'low-R':' '}
+
+initialTurn=['X','O']
+firstTurn = random.choice(initialTurn)
 
 
 def printBoard(board):
@@ -10,8 +14,7 @@ def printBoard(board):
 	print('-+-+-')
 	print(board['low-L'] +'|'+board['low-M']+'|'+board['low-R'])
 	
-	#refactor: randomize who starts
-turn = 'X'
+turn = firstTurn
 for i in range(9):
 	printBoard(theBoard)
 	print('Turn for ' + turn + '. Move on which space?')
@@ -23,6 +26,9 @@ for i in range(9):
 	else:
 		turn = 'X'
 		#refactor: clear board when game is done and restart
+	for i, v in theBoard:
+		if 
+
 		#refactor: end game when values arlign
 
 
