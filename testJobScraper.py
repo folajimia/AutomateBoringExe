@@ -1,7 +1,8 @@
 
 #!
-#The script should be able to search job index for text positions and list them
-#i will start with google search and modify
+
+#the script searches for phrases you put in a and opens the top 5 results in your default tab
+#to use enter  'python testJobScraper.py <search phrase>'
 
 import requests, sys, webbrowser, bs4
 
